@@ -1,15 +1,14 @@
-<table class="table">
+<table class="table MessageTable">
 	<tr>
-		<th scope="col">papa torvalds</th>
-		<th scope="col">botlab</th>
-		<th scope="col">This is a test</th>
-		<th scope="col">2019-08-04 06:49:50</th>
+		<th scope="col">Username</th>
+		<th scope="col">Channel</th>
+		<th scope="col">Content</th>
+		<th scope="col">Timestamp</th>
 	</tr>
-	<tr>
-	<td>papa torvalds</td>
-	<td>botlab</td>
-	<td>This is a test</td>
-	<td>2019-08-04 06:49:50</td>
-</tr>
-	<app-message-row></app-message-row>
+	<tr *ngFor="let msg of messages; let i = index">
+		<td>{{ msg.username }}</td>
+		<td>{{ msg.channel }}</td>
+		<td>{{ msg.content  }}</td>
+		<td>{{ msg.timestamp }}</td>
+	</tr>
 </table>

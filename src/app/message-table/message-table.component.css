@@ -1,0 +1,8 @@
+.MessageTable {
+	color: #fdfdfd;
+	background-color: #36393f;
+}
+
+.MessageTable td, .MessageTable th {
+	border-color: #3e4147;
+}

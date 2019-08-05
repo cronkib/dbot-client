@@ -1,11 +1,38 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-	<h1>
-		{{ title }}
-	</h1>
-	<img width="60" alt="Logo" src="../assets/activity.svg">
+<div class="app">
+	<div class="app-topbar">
+		<nav class="navbar navbar-expand-lg">
+			<span class="navbar-brand app-topbar-title">Discord
+				Activity</span>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active app-topbar-navitem">
+						<a class="nav-link" routerLink="/dashboard" routerLinkActive="active"><span
+								class="app-topbar-hash">#</span> <span class="app-topbar-text">Dashboard</span></a>
+					</li>
+					<li class="nav-item app-topbar-navitem">
+						<a class="nav-link" routerLink="/messages" routerLinkActive="active"><span
+								class="app-topbar-hash">#</span> <span class="app-topbar-text">Messages</span></a>
+					</li>
+					<li class="nav-item app-topbar-navitem">
+						<a class="nav-link" routerLink="/voiceActivity" routerLinkActive="active"><span
+								class="app-topbar-hash">#</span> <span class="app-topbar-text">Voice</span></a>
+					</li>
+				</ul>
+				<div class="input-group app-topbar-search">
+					<input class="form-control" type="search" placeholder="Search" aria-label="Search">
+					<i class="fas fa-search fa-2x"></i>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="app-content">
+		<router-outlet></router-outlet>
+	</div>
 </div>
-
-<app-message-table></app-message-table>
-
-<!--<router-outlet></router-outlet>-->
