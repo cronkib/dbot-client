@@ -8,10 +8,10 @@ import { MessageService } from "../service/message.service";
 	styleUrls: ["./message-table.component.css"]
 })
 export class MessageTableComponent implements OnInit {
-	messages: MessageActivity[];
+	activities: MessageActivity[];
 
 	constructor(private messageService: MessageService) {
-		this.messages = [];
+		this.activities = [];
 	}
 
 	ngOnInit() {
@@ -19,8 +19,8 @@ export class MessageTableComponent implements OnInit {
 	}
 
 	private refreshMessages() {
-		this.messageService.getMessages().subscribe((newMessages: MessageActivity[]) => {
-			this.messages = newMessages;
+		this.messageService.getMessageActivities().subscribe((newMessages: MessageActivity[]) => {
+			this.activities = newMessages;
 		});
 	}
 }

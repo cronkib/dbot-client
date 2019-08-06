@@ -1,0 +1,14 @@
+<table class="table ActivityTable">
+	<tr>
+		<th scope="col">Username</th>
+		<th scope="col">Channel</th>
+		<th scope="col">Event</th>
+		<th scope="col">Timestamp</th>
+	</tr>
+	<tr *ngFor="let a of activities; let i = index">
+		<td>{{ a.username }}</td>
+		<td class="channel-cell"><span class="channel-hash">#</span> {{ a.channel }}</td>
+		<td>{{ a.event }}</td>
+		<td>{{ a.timestamp }}</td>
+	</tr>
+</table>
