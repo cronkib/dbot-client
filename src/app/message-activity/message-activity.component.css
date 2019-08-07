@@ -1,0 +1,15 @@
+.message-search-box-container {
+	padding: 5px;
+}
+
+.message-search-box, .message-search-box:visited {
+	background-color: #202225;
+	border-style: none;
+	color: #b9bbbe;
+	border-style: none;
+}
+
+.input-group-text {
+	background-color: #202225;
+	border-color: #202225;
+}

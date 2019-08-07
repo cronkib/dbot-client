@@ -2,31 +2,48 @@
  * ----------------------------------------------------------------------
  * App Container
  * ----------------------------------------------------------------------
- */ 
-.app {}
+ */
+ .container {
+	background-color: #36393f;
+	border: 1px solid #202225;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 5px;
+	border-right-width: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
+	    min-height: 100%;
+    height: 100%;
+ }
 
 /*
  * ----------------------------------------------------------------------
  * Top Bar
  * ----------------------------------------------------------------------
- */ 
+ */
+ .navbar-custom {
+	background-color: #2f3136!important;
+ }
+ 
 .app-topbar {
-	background-color: #36393f;
-	border-style: solid;
-	border-width: 0px 0px 1px 0px;
-	border-color: #222327;
-	text-shadow: #222327 1px 1px 1px;
-	box-shadow: 2px 2px #2b2d32;
+	background-color: #2f3136;
 	margin-bottom: 2px;
+	border-style: solid;
+	border: 1px solid #202225;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-top-width: 0px;
+	border-bottom-width: 1px;
 	font-size: 1rem;
-	color: #a6a7a8;
+	color: #72767d;
+	text-shadow: #222327 1px 1px 1px;
 }
 
-.app-topbar-title {
+.app-topbar-title, .app-topbar-title:hover {
 	font-weight: bold;
-	font-size: 1.8rem;
-	margin-top: -5px;
-	color: #60be9a;
+	font-size: 1.6rem;
+	color: #7289da;
+	text-align: left;
 }
 
 .app-topbar-navitem {
@@ -82,39 +99,8 @@
 	background-color: #40444b;
 }
 
-.app-topbar-search {
-	width: 300px;
-	box-shadow: 0px 0px 1px 1px #2b2d32;
-	background-color: #202225;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-border-radius: 5px;
-}
-
-.app-topbar-search .fas {
-	font-weight: bold;
-	font-size: 20px;
-	padding-right: 10px;
-	vertical-align: middle;
-	margin-top: 10px;
-	color: #a6a7a8;
-}
-
-.app-topbar-search input {
-	background-color: #202225;
-	border-width: 0px;
-}
-
-.app-topbar-search input:focus {
-	border-color: inherit;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-}
-
 /*
  * ----------------------------------------------------------------------
  * Content Area 
  * ----------------------------------------------------------------------
  */
-.app-content {
-}
