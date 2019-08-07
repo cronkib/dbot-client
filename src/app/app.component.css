@@ -3,7 +3,8 @@
  * App Container
  * ----------------------------------------------------------------------
  */
- .container {
+
+.container {
 	background-color: #36393f;
 	border: 1px solid #202225;
 	border-top-width: 0px;
@@ -12,19 +13,20 @@
 	border-right-width: 5px;
 	padding-left: 0px;
 	padding-right: 0px;
-	    min-height: 100%;
-    height: 100%;
- }
+	min-height: 100%;
+	height: 100%;
+}
 
 /*
  * ----------------------------------------------------------------------
  * Top Bar
  * ----------------------------------------------------------------------
  */
- .navbar-custom {
+
+.navbar-custom {
 	background-color: #2f3136!important;
- }
- 
+}
+
 .app-topbar {
 	background-color: #2f3136;
 	margin-bottom: 2px;
@@ -78,22 +80,17 @@
 	background-color: #40444b;
 }
 
-.app-topbar-navitem a:hover > .app-topbar-text, 
-.app-topbar-navitem a:hover > .app-topbar-hash
-{
+.app-topbar-navitem a:hover>.app-topbar-text, .app-topbar-navitem a:hover>.app-topbar-hash {
 	color: #fbfbfb;
 }
-
 
 .app-topbar-navitem a:active {
 	background-color: #202225;
 }
 
-.app-topbar-navitem a:active > .app-topbar-text,
-.app-topbar-navitem a:active > .app-topbar-hash {
+.app-topbar-navitem a:active>.app-topbar-text, .app-topbar-navitem a:active>.app-topbar-hash {
 	color: #d1d2d3;
 }
-
 
 .app-topbar-navitem-active a {
 	background-color: #40444b;
@@ -104,6 +101,8 @@
  * Content Area 
  * ----------------------------------------------------------------------
  */
- .app-content {
-	 padding: 5px;
- }
+
+.app-content {
+	padding: 5px;
+	background-color: #36393f;
+}

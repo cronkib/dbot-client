@@ -2,6 +2,7 @@
 	color: #fdfdfd;
 	background-color: #36393f;
 	font-size: 0.9rem;
+	table-layout: fixed;
 }
 
 .ActivityTable tr:hover {
@@ -18,7 +19,12 @@
 .ActivityTable tr td {
 	border-color: #3e4147;
 	color: #d7d5d9;
-	max-width: 100%;
+}
+
+.ActivityTable tr td {
+	white-space: nowrap;
+	overflow: hidden;	
+	text-overflow: ellipsis;
 }
 
 .channel-hash {
